@@ -1,0 +1,51 @@
+// ----------------------
+// dialog
+// ----------------------
+.dialog-bg{
+	background: rgba(0,0,0,.7)!important;
+	background:#000;
+	filter:alpha(opacity=70);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 99;
+	display: none;
+}
+.dialog-box{
+	padding: 20px 0;
+	background-color: @dialog-bg;
+	border-radius: 4px;
+	min-width: 400px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -200px;
+	margin-top: -150px;
+	.dialog-icon{
+	text-align: center;
+	}
+	.dialog-title{
+		max-width:360px;
+		font-size: 20px;
+		color: @dialog-color;
+		font-weight: bold;
+		text-align: center;
+		padding: 20px;
+	}
+	.dialog-bottom{
+		text-align: center;
+	}
+	.dialog-btn{
+		display: inline-block;
+		margin:0 15px;
+		width: 120px;
+		height: 45px;
+		line-height:45px;
+		border: 1px solid #dbdbdb;
+		font-size: 15px;
+		font-weight: bold;
+	}
+}

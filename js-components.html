@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>web组件</title>
+	<link rel="stylesheet" type="text/css" href="css/spec.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="ysh-header-wrap">
+			<div class="ysh-header">
+				<ul>
+					<li><a href="specification.html">全局css</a></li>
+					<li><a href="web-components.html">web组件</a></li>
+					<li class="active"><a href="js-components.html">js插件</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="ysh-banner-wrap">
+		<div class="ysh-banner">
+			<h1 class="ysh-banner-h1">
+				js插件
+			</h1>
+			<p class="ysh-banner-desc">
+				确认取消弹出框、
+			</p>			
+		</div>
+	</div>
+	<div class="ysh-main-wrap">
+		<div class="ysh-main">
+			<div class="ysh-main-nav">
+				<ul>
+					<li class="active"><a href="#">弹出层</a></li>
+					<li><a href="#">确认取消框</a></li>
+					<li><a href="#">下拉框</a></li>				
+				</ul>
+			</div>
+			<div class="ysh-main-container">
+				<div class="ysh-section">
+					<h3 class="ysh-h3">确认取消框</h3>
+					<p>
+						这是一个自定义标题和按钮的确认取消弹出框，在html中引入.ysh-dialog类，
+						引入ysh.js，调用如下：
+					</p>
+					<div class="demo">
+						<pre>
+							<code>
+							     $("#trigger-btn").on("click",function(){   //#trigger-btn 触发事件的按钮
+						            $.dialog({
+						                title: '确认删除吗!',  //提示内容
+						                buttons   : {
+						                    confirm   : {'name' : '确定', 'action': function(){alert("ddd");}},   //按钮名
+						                    cancel    : {'name' : '取消','action': function(){console.log(25);}}
+						                }
+						            });
+						   	 	});
+							</code>							
+						</pre>
+					</div>
+					<a href="#" class="button-white J-dialog-test">点这里看效果</a>
+					<div class="ysh-dialog">
+					</div>
+				</div>
+				<div class="ysh-section">
+					<h3 class="ysh-h3">下拉框</h3>
+					<p>下拉框宽度默认占据100%,与栅格布局同用，用于行内布局
+					</p>
+					<div class="ysh-demo">
+						<div class="dropdown J-dropdown">
+							<span class="status">
+								下拉选择
+							</span>
+							<span class="dropdown-icon"></span>
+							<ul class="dropdown-ul hid">
+								<li>
+									第一个选项
+								</li>
+								<li>
+									第二个选项
+								</li>
+							</ul>
+						</div>						
+					</div>	
+					<div class="demo">
+						<pre>
+							<code>
+							     dropdown(".J-dropdown",".status",".dropdown-ul");
+							</code>							
+						</pre>
+					</div>				
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/ysh.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			// 确认取消弹出框
+			$(".J-dialog-test").on("click",function(){
+	            $.dialog({
+	                title: '确认删除吗!',  //提示内容
+	                buttons   : {
+	                    confirm   : {
+	                         'name' : '确定',   //按钮名
+	                        'action': function(){
+	                            console.log(111);
+	                        }
+	                    },
+	                    cancel    : {
+	                         'name' : '取消',
+	                        'action': function(){
+	                            console.log(25);
+	                        }
+	                    }
+	                }
+	            });
+    		});
+    		// 下拉框
+    		dropdown(".J-dropdown",".status",".dropdown-ul");
+		})
+	</script>
+</body>
+</html>

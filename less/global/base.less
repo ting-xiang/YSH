@@ -1,0 +1,96 @@
+//---------------------------
+// Variables
+
+//== Colors
+//## base color
+
+// background color for <body>
+@body-base:#666;
+// base color
+@color-base:#fff;
+// border color
+@container-border:#ddd;
+// gray
+@gray-base:#000;
+@gray-darker:lighten(@gray-base,20%);    //#333
+@gray-dark:lighten(@gray-base,33.5%);    //#555
+@gray:lighten(@gray-base,40%);           //#666
+@gray-light:lighten(@gray-base,46.7%);   //#777
+@gray-lighter:lighten(@gray-base,60%);   //#999
+
+// others gray
+@bg-base:#f5f5f5;
+@table-th-bg:#f8f8f8;
+// common color
+@orange-base:#fe5842;
+@blue-base:#4296fe;
+@green-base:#24c889;
+
+//==Fontsize
+//## base size
+@font-size-base:14px;
+@font-size-small:ceil((@font-size-base * 0.85));   //12px
+@font-size-large:ceil((@font-size-base * 1.14));   //16px
+@font-size-larger:ceil((@font-size-base * 1.28));  //18px
+
+//==Font family
+//##base family
+@font-family-base:"Microsoft YaHei","Helvetica Neue", Helvetica,Arial,"Hiragino Sans GB";
+@font-weight:500;
+@line-height:1.1;
+
+// ==h1~h6
+@h3-color:#5a5a5a;
+
+//==Link
+//##Global
+@link-color:@body-base;
+@link-hover-color:@orange-base;
+@link-hover-decoration:none;
+
+//==Light-height
+@line-height-base: 1.428571429;   // 20/14
+@line-height-compute:ceil((@font-size-base * @line-height-base));  //20px
+
+//==Components
+@padding-vertical-base:5px;
+@padding-vertical-large:10px;
+@padding-vertical-larger:20px;
+@border-radius-base:4px;
+@border-radius-small:3px;
+@border-radius-large:6px;
+
+//==button
+@button-color-base:@color-base;
+@button-bg-base:@orange-base;
+@button-border-base:@orange-base;
+
+//==table
+@table-bg:transparent;
+@table-border-color:#e8e8e8;
+@table-td-color:#ededed;
+
+//== input
+@input-bg:@color-base;
+@input-label-color:#555;
+@input-color:@gray-lighter;
+@input-border-color:#d8d8d8;
+
+// == dialog
+@dialog-bg:@color-base;
+@dialog-color:@gray-darker;
+
+// == box
+.box-sizing{
+	box-sizing: border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+.clear{
+	content: '';
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	height: 0;
+}

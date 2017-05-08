@@ -1,0 +1,45 @@
+/** 
+ * pagination
+ * -------------------------------
+ * 分页栏
+ * 
+ */
+
+ .pagination{
+ 	margin: 20px auto;
+ 	text-align: center;
+ 	.box-sizing;
+ 	ul{
+ 		display:inline-block;
+ 		li{
+ 			display: inline-block;
+ 			margin: 0 5px;
+ 			width: 35px;
+ 			height: 28px;
+ 			line-height: 28px;
+ 			background-color: @orange-base;
+ 			border: 1px solid @orange-base;
+ 			font-size: @font-size-base;
+ 			a {
+ 				color: @color-base;
+ 				display: inline-block;
+ 				width: 100%;
+ 			}
+ 			&.active{
+				background-color: @color-base;
+				a{
+					color: @orange-base;
+				}
+ 			}
+ 			&.prev,&.next{
+				width: 60px;
+ 			}
+		 	&.total{
+		 		width: auto;
+		 		color: @gray-lighter;
+		 		background-color: @color-base;
+		 		border: 1px solid @color-base;
+		 	}
+ 		}
+ 	}
+ }

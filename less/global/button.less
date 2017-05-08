@@ -1,0 +1,88 @@
+// ==button
+
+// orange button
+.button-small{
+	display: inline-block;
+	width: 70px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+}
+.button-middle{
+	display: inline-block;
+	width: 90px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+}
+.button-large{
+	display: inline-block;
+	width: 340px;
+	height: 44px;
+	line-height: 44px;
+	font-size: 20px;
+}
+.button-style(@background,@color){
+	background-color: @background;
+	color: @color;
+	border: 1px solid @background;
+	text-align: center;
+	vertical-align: middle;
+	border-radius:@border-radius-base;
+}
+.button-orange{
+	.button-style(@orange-base,#fff);
+}
+.button-blue{
+	.button-style(@blue-base,#fff);
+}
+.button-green{
+	.button-style(@green-base,#fff);
+}
+.button-white{
+	display: inline-block;
+	width: 100px;
+	height: 35px;
+	line-height: 35px;
+	background-color: @color-base;
+	color: @orange-base;
+	text-align: center;
+	border: 1px solid @orange-base;
+	border-radius: @border-radius-base;
+}
+.button-orange-small{
+	.button-small;
+	.button-orange;
+}
+.button-orange-middle{
+	.button-middle;
+	.button-orange;
+}
+.button-orange-large{
+	.button-large;
+	.button-orange;
+}
+.button-blue-small{
+	.button-small;
+	.button-blue;
+}
+.button-blue-middle{
+	.button-middle;
+	.button-blue;
+}
+.button-blue-large{
+	.button-large;
+	.button-blue;
+}
+.button-green-small{
+	.button-small;
+	.button-green;
+}
+.button-green-middle{
+	.button-middle;
+	.button-green;
+}
+.button-green-large{
+	.button-large;
+	.button-green;
+}

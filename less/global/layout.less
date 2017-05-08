@@ -1,0 +1,116 @@
+// layout
+// **in the end
+
+// header
+.header-wrap{
+	width: 100%;
+	border-bottom: 2px solid @orange-base;
+	background-color: @color-base;
+	.header{
+		width: 85%;
+		margin: 0 auto;
+		height: 120px;
+		.left{
+			float: left;
+		}
+		.right{
+			float: right;
+		}
+	}
+	.header-img{
+		display: block;
+		width: 338px;
+		height: 119px;
+	}
+	.header-nav{
+		font-size: 0;
+		li{
+			display: inline-block;
+			height: 25px;
+			margin-top:75px;
+			margin-left: 35px;
+			color: #777;
+			font-size: 14px;
+			a{
+				padding-left: 10px;
+				color: #000;
+			}
+		}
+	}
+}
+
+.container-bg{
+	background-color: @bg-base;
+	.container{
+		width: 85%;
+		margin: 0 auto;
+		position: relative;
+		&:after{
+			.clear;
+		}
+	}
+}
+// == sidebar
+.sidebar{
+	position: absolute;
+	top: 0;
+	background-color: @color-base;
+	overflow: hidden;
+	padding:20px 0;
+	width: 185px;
+	.box-sizing;
+}
+.sidebar h3{
+	width:140px;
+	font-size:18px; 
+	height:36px; 
+	padding-left:45px; 
+	font-weight:normal; 
+}
+.sidebar ul{
+	width:140px;
+	padding-left: 45px;
+}
+.sidebar ul li{
+	height: 28px;
+}
+.sidebar li a{
+	color: @body-base;
+}
+.sidebar li a.active{
+	color: @orange-base;
+}
+
+// == main 
+.main{
+	background-color: @color-base;
+	min-height: 730px;
+	margin-left: 205px;	
+}
+.main-pad{
+	padding: @padding-vertical-large @padding-vertical-larger ;
+}
+.main-title{
+	line-height: @line-height-base;
+	color: @h3-color;
+	font-size: @font-size-larger;
+	font-weight: normal;
+} 
+.main-column{
+	padding: 15px;
+	border: 1px solid @table-border-color;
+	background-color: @table-th-bg;
+	&.mar-t15{
+		margin-top: 15px;
+	}
+	&:after{
+		.clear;
+	}
+}
+
+// == icon+font
+
+.font-btn{
+	color: @blue-base;
+	margin-left: 30px;
+} 

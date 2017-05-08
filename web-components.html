@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>web组件</title>
+	<link rel="stylesheet" type="text/css" href="css/spec.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="ysh-header-wrap">
+			<div class="ysh-header">
+				<ul>
+					<li><a href="specification.html">全局css</a></li>
+					<li class="active"><a href="web-components.html">web组件</a></li>
+					<li><a href="js-components.html">js插件</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="ysh-banner-wrap">
+		<div class="ysh-banner">
+			<h1 class="ysh-banner-h1">
+				全局css
+			</h1>
+			<p class="ysh-banner-desc">
+				表格、表单、按钮及常用组件样式。
+			</p>			
+		</div>
+
+	</div>
+	<div class="ysh-main-wrap">
+		<div class="ysh-main">
+			<div class="ysh-main-nav">
+				<ul>
+					<li class="active"><a href="#">常用</a></li>
+					<li><a href="#">按钮</a></li>
+					<li><a href="#">input</a></li>	
+					<li><a href="#">表格</a></li>				
+					<li><a href="#">分页</a></li>				
+				</ul>
+			</div>
+			<div class="ysh-main-container">
+				<div class="ysh-section">
+
+					<h3 class="ysh-h3">按钮</h3>
+					<p>包括基础的橙色与白色背景按钮，三种类型：小、中、大。</p>
+					<div class="ysh-demo">
+						<div class="button-orange-small">orange小</div>
+						<div class="button-orange-middle">orange中</div>
+						<div class="button-orange-large">orange大</div>
+					</div>
+					<div class="ysh-demo">
+						<div class="button-blue-small">blue小</div>
+						<div class="button-blue-middle">blue中</div>
+						<div class="button-blue-large">blue大</div>
+					</div>
+					<div class="ysh-demo">
+						<div class="button-green-small">green小</div>
+						<div class="button-green-middle">green中</div>
+						<div class="button-green-large">green大</div>
+					</div>
+					<div class="ysh-demo">
+						<div class="button-white">white</div>	
+					</div>
+					<pre>
+						<code>
+							&lt;div class="ysh-demo"&gt;
+								&lt;div class="button-orange-small"&gt;orange小&lt;/div&gt;
+								&lt;div class="button-orange-middle"&gt;orange中&lt;/div&gt;
+								&lt;div class="button-orange-large"&gt;orange大&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;div class="ysh-demo"&gt;
+								&lt;div class="button-blue-small"&gt;blue小&lt;/div&gt;
+								&lt;div class="button-blue-middle"&gt;blue中&lt;/div&gt;
+								&lt;div class="button-blue-large"&gt;blue大&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;div class="ysh-demo"&gt;
+								&lt;div class="button-green-small"&gt;green小&lt;/div&gt;
+								&lt;div class="button-green-middle"&gt;green中&lt;/div&gt;
+								&lt;div class="button-green-large"&gt;green大&lt;/div&gt;
+							&lt;/div&gt;
+							&lt;div class="ysh-demo"&gt;
+								&lt;div class="button-white"&gt;white&lt;/div&gt;	
+							&lt;/div&gt;
+						</code>
+					</pre>
+					<div class="ysh-section">
+						<h3 class="ysh-h3">input组件</h3>
+						<p>input组件包括一般的输入框以及时间和日期区间，input组件占据100%宽度，两端宽度自适应</p>
+						<div class="ysh-demo">
+							<div class="input-group">
+								<label class="input-label-base">商品编码/条码/名称/物流码</label>
+								<input type="text" placeholder="20151012545786584458" class="input-base">
+							</div>							
+						</div>
+						<pre>
+							<code>
+								&lt;div class="ysh-demo"&gt;
+								&lt;div class="input-group"&gt;
+									&lt;label class="input-label-base"&gt;商品编码/条码/名称/物流码&lt;/label&gt;
+									&lt;input type="text" placeholder="20151012545786584458" class="input-base"&gt;
+								&lt;/div&gt;
+								&lt;/div&gt;
+							</code>
+						</pre>
+						<div class="ysh-demo">
+							<div class="input-group">
+								<label class="input-label-base">库存区间</label>
+								<input type="text" placeholder="20151012545" class="input-base">
+								<label class="input-label-base">-</label>
+								<input type="text" placeholder="20151012545" class="input-base">
+							</div>							
+						</div>
+					</div>
+					<div class="ysh-section">
+						<h3 class="ysh-h3">表格</h3>
+						<p>默认的带有.table类的表格行内是没有边框的，若需加边框，需加.table-border类。</p>
+						<div class="ysh-demo">
+							<table class="table table-border">
+								<caption>
+									供货商详情
+								</caption>
+								<thead>
+									<tr>
+										<th colspan="2" class="table-text-left">基础信息</th>
+									</tr>							
+								</thead>
+								<tbody>
+									<tr>
+										<th class="table-text-right">供货商名称</th>
+										<td class="table-text-left">重庆恬福源商贸有限公司</td>
+									</tr>	
+									<tr>
+										<th class="table-text-right">合同状态</th>
+										<td class="table-text-left">重庆恬福源商贸有限公司</td>
+									</tr>						
+								</tbody>
+							</table>
+						</div>
+						<pre>
+							<code>
+								&lt;div class="ysh-demo"&gt;
+									&lt;table class="table table-border"&gt;
+										&lt;caption&gt;
+											供货商详情
+										&lt;/caption&gt;
+										&lt;thead&gt;
+											&lt;tr&gt;
+												&lt;th colspan="2" class="table-text-left"&gt;基础信息&lt;/th&gt;
+											&lt;/tr&gt;							
+										&lt;/thead&gt;
+										&lt;tbody&gt;
+											&lt;tr&gt;
+												&lt;th class="table-text-right"&gt;供货商名称&lt;/th&gt;
+												&lt;td class="table-text-left"&gt;重庆恬福源商贸有限公司&lt;/td&gt;
+											&lt;/tr&gt;	
+											&lt;tr&gt;
+												&lt;th class="table-text-right"&gt;合同状态&lt;/th&gt;
+												&lt;td class="table-text-left"&gt;重庆恬福源商贸有限公司&lt;/td&gt;
+											&lt;/tr&gt;						
+										&lt;/tbody&gt;
+									&lt;/table&gt;
+								&lt;/div&gt;
+							</code>
+						</pre>
+					</div>
+					<div class="ysh-section">
+						<h3 class="ysh-h3">分页</h3>
+						<p>分页中当前页加类.active,首页与末页分别加.prev、.next，最后的词条加total类。</p>
+						<div class="ysh-demo">
+							<div class="pagination">
+								<ul>
+									<li class="prev">
+										<a href="#">首页</a>
+									</li>
+									<li>
+										<a href="#">1</a>
+									</li>
+									<li class="active">
+										<a href="#">2</a>
+									</li>
+									<li>
+										<a href="#">30</a>
+									</li>
+									<li class="next">
+										<a href="#">末页</a>
+									</li>
+									<li class="total">
+										1-10条，共100条
+									</li>
+								</ul>
+							</div>
+						</div>
+						<pre>
+							<code>
+								&lt;div class="ysh-demo"&gt;
+									&lt;div class="pagination"&gt;
+										&lt;ul&gt;
+											&lt;li class="prev"&gt;
+												&lt;a href="#"&gt;首页&lt;/a&gt;
+											&lt;/li&gt;
+											&lt;li&gt;
+												&lt;a href="#"&gt;1&lt;/a&gt;
+											&lt;/li&gt;
+											&lt;li class="active"&gt;
+												&lt;a href="#"&gt;2&lt;/a&gt;
+											&lt;/li&gt;
+											&lt;li&gt;
+												&lt;a href="#"&gt;30&lt;/a&gt;
+											&lt;/li&gt;
+											&lt;li class="next"&gt;
+												&lt;a href="#"&gt;末页&lt;/a&gt;
+											&lt;/li&gt;
+											&lt;li class="total"&gt;
+												1-10条，共100条
+											&lt;/li&gt;
+										&lt;/ul&gt;
+									&lt;/div&gt;
+								&lt;/div&gt;
+							</code>
+						</pre>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

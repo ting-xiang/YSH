@@ -1,0 +1,54 @@
+//table
+
+table{
+	background-color: @table-bg;
+}
+caption{
+	text-align: left;
+	padding-left: @padding-vertical-large;
+	padding: @padding-vertical-large;
+	font-size: @font-size-large;
+}
+.table{
+	width: 100%;
+	border-collapse:collapse;
+	border:1px solid @table-border-color;
+	> thead,
+	> tbody{
+		> tr {
+			> th,
+			> td {
+				border-top: 1px solid @table-border-color;
+				text-align: center;
+				line-height: @line-height-base;
+				padding: @padding-vertical-large;
+				&.table-text-left{
+					text-align: left;	
+				}
+				&.table-text-right{
+					text-align: right;	
+				}
+			}
+		    > th {
+		    	background-color: @table-th-bg;
+		    }
+		}
+		> tr:first-child {
+			border-top: 0;
+		}
+	}
+}
+.table-gray-bg{
+	background-color: @table-th-bg;
+}
+.table-border{
+	> thead ,
+	> tbody {
+		> tr {
+			> th ,
+			> td {
+				border: 1px solid @table-border-color;
+			}
+		}
+	}
+}

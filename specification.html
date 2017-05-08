@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>yishenghuo</title>
+	<link rel="stylesheet" type="text/css" href="css/spec.css">
+</head>
+<body>
+	<header>
+		<div class="ysh-header-wrap">
+			<div class="ysh-header">
+				<ul>
+					<li class="active"><a href="specification.html">基础设置</a></li>
+					<li><a href="web-components.html">css组件</a></li>
+					<li><a href="js-components.html">js插件</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="ysh-banner-wrap">
+		<div class="ysh-banner">
+			<h1 class="ysh-banner-h1">
+				基础设置
+			</h1>
+			<p class="ysh-banner-desc">
+				css/js编写规范、重置样式库、目录结构。
+			</p>			
+		</div>
+
+	</div>
+	<div class="ysh-main-wrap">
+		<div class="ysh-main">
+			<div class="ysh-main-nav">
+				<ul>
+					<li class="active"><a href="#">编写规范</a></li>
+					<li><a href="#">css编写规范</a></li>
+					<li><a href="#">js编写规范</a></li>
+					<li class="active"><a href="#">重置样式库</a></li>
+					<li><a href="#">normalize重置样式库</a></li>
+					<li class="active"><a href="#">目录结构</a></li>
+					<li><a href="#">目录</a></li>
+					<li class="active"><a href="#">基础布局</a></li>
+					<li><a href="#">栅格布局</a></li>					
+				</ul>
+			</div>
+			<div class="ysh-main-container">
+				<div class="ysh-section">
+					<h3 class="ysh-h3">HTML/CSS编写规范</h3>
+					<p class="ysh-p">
+						YSH-UI的css是经过less编译而来的。css的基础命名方式为{模块名}+{状态}，通过css的命名，大概知道是干什么的。如下：
+					</p>
+					<ul class="ysh-gray">
+						<li>
+							.dropdown{ }
+						</li>
+						<li>
+							.dropdown-icon{ }
+						</li>
+						<li>
+							.button-orange-small{ }
+						</li>
+					</ul>
+				</div>
+				<div class="ysh-section">
+					<h3 class="ysh-h3">JS编写规范</h3>
+					<p class="ysh-p">
+						与JS相关的css我们使用钩子方式，即给js加前缀J-，且该css不写任何样式。如下：
+					</p>
+					<ul class="ysh-gray">
+						<li>
+							.J-dropdown{ }
+						</li>
+						<li>
+							.J-return-top{ }
+						</li>
+					</ul>
+				</div>
+				<div class="ysh-section">
+					<h3 class="ysh-h3">重置样式库</h3>
+					<p class="ysh-p">
+						为了增强css样式跨游览器表现的一致性，使用了css统一样式库<span class="ysh-color-blue">normalize</span>
+					</p>
+				</div>
+				<div class="ysh-section">
+					<h3 class="ysh-h3">目录结构</h3>
+					<ul class="ysh-gray">
+						<li>base.less ——less变量，定义基础颜色，字体，边框，边距等等。</li>
+						<li>layout.less ——自定义的其他样式</li>
+						<li>button.less、dialog.less、inpu.less等 ——自定义的组件</li>
+					</ul>
+				</div>
+				<div class="ysh-section">
+					<h3 class="ysh-h3">栅格布局</h3>
+					<p>
+						YSH-UI是一个自适应的网站，兼容中、大屏显示器。使用了栅格布局，将一行分为十二份，根据实际使用情况，自定义宽度。
+					</p>
+					<div class="row main-column">
+						<div class="col-md-4">
+							col-md-4
+						</div>
+						<div class="col-md-3">
+							col-md-3
+						</div>
+						<div class="col-md-5">
+							col-md-5
+						</div>
+					</div>
+					<pre>
+						<code>
+							&lt;div class="row main-column"&gt;
+								&lt;div class="col-md-4"&gt;
+									col-md-4
+								&lt;/div&gt;
+								&lt;div class="col-md-3"&gt;
+									col-md-3
+								&lt;/div&gt;
+								&lt;div class="col-md-5"&gt;
+									col-md-5
+								&lt;/div&gt;
+							&lt;/div&gt;
+						</code>
+					</pre>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
